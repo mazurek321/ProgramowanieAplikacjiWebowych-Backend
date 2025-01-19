@@ -133,3 +133,4 @@ C:\Users\Bartek\Desktop\webowka\obj\Debug\net8.0\refint\projekt.dll
 C:\Users\Bartek\Desktop\webowka\obj\Debug\net8.0\projekt.pdb
 C:\Users\Bartek\Desktop\webowka\obj\Debug\net8.0\projekt.genruntimeconfig.cache
 C:\Users\Bartek\Desktop\webowka\obj\Debug\net8.0\ref\projekt.dll
+C:\Users\Bartek\Desktop\webowka\obj\Debug\net8.0\projekt.sourcelink.json

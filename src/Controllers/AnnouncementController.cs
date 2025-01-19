@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using projekt.src.Controllers.Dto.AnnouncementDto;
@@ -106,7 +107,7 @@ public class AnnouncementController : ControllerBase
         if(announcement is null) throw new CustomException("Announcement not found.");
 
         var user = await _userService.CurrentUser(User);
-        if(announcement.OwnerId != user.Id) throw new CustomException("You dont have persmission to update this announcement.");
+        if(announcement.OwnerId != user.Id && user.Role != AccountType.Admin()) throw new CustomException("You dont have persmission to update this announcement.");
 
         var itemAmount = new ItemAmount(dto.Amount.Value);
         var cost = new Cost(dto.Cost.Value);
