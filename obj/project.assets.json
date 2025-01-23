@@ -4377,11 +4377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Bartek\\Desktop\\webowka\\projekt.csproj",
+      "projectUniqueName": "C:\\Users\\Bartek\\Desktop\\webowka\\projekt.csproj",
       "projectName": "projekt",
-      "projectPath": "c:\\Users\\Bartek\\Desktop\\webowka\\projekt.csproj",
+      "projectPath": "C:\\Users\\Bartek\\Desktop\\webowka\\projekt.csproj",
       "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Bartek\\Desktop\\webowka\\obj\\",
+      "outputPath": "C:\\Users\\Bartek\\Desktop\\webowka\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\programy\\DevExpress\\Components\\Offline Packages",

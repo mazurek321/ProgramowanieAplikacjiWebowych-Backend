@@ -134,7 +134,7 @@ public class AnnouncementController : ControllerBase
         if(announcement is null) throw new CustomException("Announcement not found.");
 
         var user = await _userService.CurrentUser(User);
-        if(announcement.OwnerId != user.Id) throw new CustomException("You dont have permission to delete this announcement.");
+        if(announcement.OwnerId != user.Id && user.Role != AccountType.Admin()) throw new CustomException("You dont have permission to delete this announcement.");
         
         _dbContext.Remove(announcement);
         await _dbContext.SaveChangesAsync();
